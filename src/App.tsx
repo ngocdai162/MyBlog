@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+
+import React from "react";
+import "./app.scss";
+import "react-slideshow-image/dist/styles.css";
+import { Route, Routes } from "react-router";
+import MainLayout from "./layouts/MainLayout";
+import MyVideo from "./pages/myVideo/MyVideo";
+import MyMusic from "./pages/myMusic/MyMusic";
+import MyImage from "./pages/myImage/MyImage";
+import Home from "./pages/home/Home";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Routes>
+				<Route path='/' element={<MainLayout />}>
+					<Route index element={<Home />} />
+					<Route path='video' element={<MyVideo />} />
+					<Route path='music' element={<MyMusic />} />
+					<Route path='image' element={<MyImage />} />
+				</Route>
+				<Route path='*' element={<p>404</p>} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;

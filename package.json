@@ -3,18 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/howler": "^2.2.7",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.30",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
+    "@types/react-redux": "^7.1.25",
+    "antd": "^5.4.7",
+    "howler": "^2.2.3",
+    "http-proxy-middleware": "^2.0.6",
+    "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router": "^6.11.1",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "react-slideshow-image": "^4.2.1",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.82.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,6 +36,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://mp3.zing.vn",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,5 +54,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26",
+    "prettier": "^2.8.8",
+    "styled-components": "^5.3.10"
   }
 }
