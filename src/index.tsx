@@ -15,11 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
 	<React.StrictMode>
 		<Provider store={store}>
-			<BrowserRouter>
-				<HashRouter basename=''>
+				<HashRouter>
 					<App />
 				</HashRouter>
-			</BrowserRouter>
 		</Provider>
 	</React.StrictMode>
 );
