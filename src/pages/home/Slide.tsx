@@ -37,6 +37,7 @@ export const Slideshow = () => {
 				transitionDuration={500}
 				autoplay={isPlay}
 				duration={2000}
+				cssClass='custom__slide'
 				{...customArrow}>
 				{slideImages.map((slideImage, index) => (
 					<div key={index}>
@@ -94,6 +95,23 @@ export const SlideShowStyled = styled.div`
 			&.next {
 				right: 20px;
 			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+	}
+
+	@media only screen and (max-width: 600px) {
+		.custom__slide {
+			height: 200px;
+			svg {
+				font-size: 14px !important;
+			}
+			.react-slideshow-container .arrow__btn svg {
+				font-size: 14px;
+			}
+		}
+		.arrow__btn {
+			display: none;
 		}
 	}
 `;

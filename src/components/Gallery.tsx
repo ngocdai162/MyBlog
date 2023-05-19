@@ -60,4 +60,14 @@ const GalleryStyle = styled.div`
 			}
 		}
 	}
+	@media only screen and (max-width: 600px) {
+		.lg-react-element {
+			a {
+				padding: 4px;
+				.img__block__view {
+					height: 50px;
+				}
+			}
+		}
+	}
 `;

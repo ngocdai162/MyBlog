@@ -25,7 +25,7 @@ export default function MusicPlayer() {
 	};
 
 	return (
-		<MusicPlayerStyled>
+		<MusicPlayerStyled className={isPlaying ? "down" : "up"}>
 			<div id='content'>
 				<canvas id='canvas-audio'></canvas>
 				<audio
@@ -48,10 +48,11 @@ const MusicPlayerStyled = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	#content {
 		position: absolute;
 		width: 100%;
-		height: 240px;
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		#canvas-audio {
@@ -88,5 +89,18 @@ const MusicPlayerStyled = styled.div`
 		left: 10px;
 		bottom: 10px;
 		width: calc(100% - 20px);
+	}
+	@media only screen and (max-width: 768px) {
+	}
+
+	@media only screen and (max-width: 600px) {
+		height: 120px;
+		transition: height 2s;
+		&.down {
+			height: 240px;
+		}
+		button {
+			font-size: 18px;
+		}
 	}
 `;

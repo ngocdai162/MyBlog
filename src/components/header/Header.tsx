@@ -25,4 +25,13 @@ const HeaderStyled = styled.div`
 	img {
 		height: 100px;
 	}
+	@media only screen and (max-width: 768px) {
+		height: 140px;
+		h1 {
+			font-size: 40px;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+	}
 `;

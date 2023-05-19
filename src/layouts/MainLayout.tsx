@@ -27,4 +27,15 @@ const MainLayoutStyled = styled.div`
 		padding: ${size.largeSpace} ${size.largeSpace} 80px ${size.largeSpace};
 		width: 100%;
 	}
+	@media only screen and (max-width: 768px) {
+		.container {
+			padding: ${size.smallSpace};
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.container {
+			padding: 12px 12px ${size.smallSpace} 12px;
+		}
+	}
 `;

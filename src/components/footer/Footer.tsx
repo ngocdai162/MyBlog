@@ -92,4 +92,10 @@ const FooterStyled = styled.div`
 			font-size: 20px;
 		}
 	}
+	@media only screen and (max-width: 600px) {
+		.scroll__to__top {
+			right: 20px;
+		}
+		border-top: none;
+	}
 `;

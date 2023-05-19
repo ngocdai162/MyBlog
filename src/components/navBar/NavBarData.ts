@@ -10,12 +10,12 @@ export const NavBarData: NavBarDataType[] = [
 		url: "/image",
 	},
 	{
-		name: "VIDEO",
-		url: "/video",
-	},
-	{
 		name: "MUSIC",
 		url: "/music",
+	},
+	{
+		name: "VIDEO",
+		url: "/video",
 	},
 ];
 

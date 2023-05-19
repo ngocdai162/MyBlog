@@ -8,11 +8,13 @@ import { size } from "../../utils/constants/style";
 import MyImage from "../../assets/img/about_me.jpg";
 import { AboutMeItemType } from "./Type";
 import MusicPlayer from "./musicPlayer/MusicPlayer";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 export default function Home() {
+	const isMobileDevice = useMediaQuery("(max-width: 600px)");
 	return (
 		<MyHomeStyled>
-			<Slideshow />
+			{!isMobileDevice && <Slideshow />}
 			<div className='home'>
 				<div className='home__main'>
 					{AboutMeRender.map((item: AboutMeItemType, index: number) => (
@@ -34,9 +36,9 @@ export default function Home() {
 	);
 }
 
-const AboutMeItem = ({ title, content }: AboutMeItemType) => {
+const AboutMeItem = ({ title, content, className }: AboutMeItemType) => {
 	return (
-		<AboutMeItemStyled>
+		<AboutMeItemStyled className={`about__item ${className}`}>
 			<h1>{title}</h1>
 			<p>{content}</p>
 		</AboutMeItemStyled>
@@ -67,6 +69,49 @@ const MyHomeStyled = styled.div`
 			}
 		}
 	}
+	@media only screen and (max-width: 768px) {
+	}
+
+	@media only screen and (max-width: 600px) {
+		.home {
+			flex-direction: column-reverse;
+
+			&__main {
+				width: 100% !important;
+				h1 {
+					margin-top: 20px;
+					margin-bottom: 5px;
+				}
+				.total {
+					font-size: 30px !important;
+					padding-top: 0px;
+					margin-top: 0px;
+					h1 {
+						margin-top: 0px;
+					}
+					/* margin-bottom:  */
+				}
+			}
+
+			.side__panel {
+				width: 100%;
+				canvas {
+					width: 100%;
+				}
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+					transform: translate3d(0, 0, -20%);
+				}
+				to {
+					opacity: 1;
+					transform: translate3d(0, 0, 0);
+				}
+			}
+		}
+	}
 `;
 
 const AboutMeItemStyled = styled.div`
@@ -74,6 +119,9 @@ const AboutMeItemStyled = styled.div`
 	flex-direction: column;
 	align-items: center;
 	margin-top: 30px;
+	@media only screen and (max-width: 600px) {
+		margin-top: 0px;
+	}
 	h1 {
 		color: #000;
 		margin-bottom: 15px;

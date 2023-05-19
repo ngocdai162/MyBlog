@@ -56,4 +56,16 @@ const SongItemViewStyled = styled.div`
 	.total__time {
 		margin-right: ${size.largeSpace};
 	}
+	@media only screen and (max-width: 600px) {
+		height: 90px;
+		.song__content {
+			&__name {
+				margin-left: 10px;
+				width: 240px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
 `;
