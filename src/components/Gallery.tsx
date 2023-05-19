@@ -64,8 +64,9 @@ const GalleryStyle = styled.div`
 		.lg-react-element {
 			a {
 				padding: 4px;
+				width: 50%;
 				.img__block__view {
-					height: 50px;
+					height: 100px;
 				}
 			}
 		}
