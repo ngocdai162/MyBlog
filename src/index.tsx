@@ -16,7 +16,7 @@ root.render(
 	<React.StrictMode>
 		<Provider store={store}>
 			<BrowserRouter>
-				<HashRouter basename='/'>
+				<HashRouter basename=''>
 					<App />
 				</HashRouter>
 			</BrowserRouter>
