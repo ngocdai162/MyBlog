@@ -1,17 +1,19 @@
 /** @format */
-
 import React from "react";
 import styled from "styled-components";
 import {
 	YoutubeOutlined,
 	FacebookOutlined,
 	InstagramOutlined,
+	UpOutlined,
 } from "@ant-design/icons";
 import SoundCloudICon from "../../assets/icons/SoundCloudICon";
 import { CONTACT_URL } from "../../utils/constants/path";
 import { color } from "../../utils/constants/style";
+import { useScrollToTop } from "../../hooks/useScrollToTop";
 
 export default function Footer() {
+	const { isVisible, scrollToTop } = useScrollToTop(400);
 	return (
 		<FooterStyled>
 			<p>Follow me</p>
@@ -23,9 +25,15 @@ export default function Footer() {
 					/>
 				))}
 			</div>
+			{isVisible && (
+				<button onClick={scrollToTop} className='scroll__to__top'>
+					<UpOutlined />
+				</button>
+			)}
 		</FooterStyled>
 	);
 }
+
 const ContactItem = ({
 	hrefContact,
 	iconContact,
@@ -66,6 +74,22 @@ const FooterStyled = styled.div`
 				color: ${color.grayText};
 				fill: ${color.grayText};
 			}
+		}
+	}
+	.scroll__to__top {
+		position: fixed;
+		bottom: 50px;
+		right: 50px;
+		border: none;
+		background: #fff;
+		border-radius: 50%;
+		border: 3px solid ${color.brightColor};
+		width: 50px;
+		height: 50px;
+		z-index: 1001;
+
+		svg {
+			font-size: 20px;
 		}
 	}
 `;

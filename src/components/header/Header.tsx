@@ -1,5 +1,4 @@
 /** @format */
-
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../utils/constants/style";

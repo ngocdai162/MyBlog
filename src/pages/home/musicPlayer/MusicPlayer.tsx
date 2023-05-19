@@ -8,19 +8,18 @@ export default function MusicPlayer() {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const audioElm = useRef<HTMLAudioElement | null>(null);
 
+	useEffect(() => {
+		toggleAudio();
+	}, [isPlaying]);
+
 	const toggleAudio = () => {
 		if (audioElm?.current) {
-			if (audioElm?.current.currentTime === 0) {
-				loadCanvas();
-				setIsPlaying(true);
+			if (isPlaying) {
+				if (audioElm?.current.currentTime === 0) {
+					loadCanvas();
+				} else audioElm?.current?.play();
 			} else {
-				if (audioElm?.current.paused) {
-					audioElm?.current?.play();
-					setIsPlaying(true);
-				} else {
-					audioElm?.current?.pause();
-					setIsPlaying(false);
-				}
+				audioElm?.current?.pause();
 			}
 		}
 	};
@@ -35,7 +34,7 @@ export default function MusicPlayer() {
 					ref={audioElm}
 					autoPlay={true}></audio>
 			</div>
-			<button onClick={() => toggleAudio()}>
+			<button onClick={() => setIsPlaying(!isPlaying)}>
 				{isPlaying ? "Pause" : "Load Music Background"}
 			</button>
 		</MusicPlayerStyled>

@@ -1,8 +1,6 @@
 /** @format */
 
 import React from "react";
-import styled from "styled-components";
-import song from "./backgroundAudio.mp3";
 
 export const loadCanvas = () => {
 	var audio = document.getElementById("background-audio");
