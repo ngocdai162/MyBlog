@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyBlog/static/css/main.a686efad.css",
-    "main.js": "/MyBlog/static/js/main.a33d4277.js",
+    "main.js": "/MyBlog/static/js/main.60552a7a.js",
     "static/js/787.a361b86b.chunk.js": "/MyBlog/static/js/787.a361b86b.chunk.js",
     "static/media/backgroundAudio.mp3": "/MyBlog/static/media/backgroundAudio.b0a06b10a35eb04f844c.mp3",
     "static/media/Ghe Tham - Den_ Kimmese_ Linh Cao_ JGKID.mp3": "/MyBlog/static/media/Ghe Tham - Den_ Kimmese_ Linh Cao_ JGKID.542de69d3d3af4c0bd81.mp3",
@@ -44,11 +44,11 @@
     "static/media/lg.woff2?io9a6k": "/MyBlog/static/media/lg.64b800aa30714fd916dc.woff2",
     "index.html": "/MyBlog/index.html",
     "main.a686efad.css.map": "/MyBlog/static/css/main.a686efad.css.map",
-    "main.a33d4277.js.map": "/MyBlog/static/js/main.a33d4277.js.map",
+    "main.60552a7a.js.map": "/MyBlog/static/js/main.60552a7a.js.map",
     "787.a361b86b.chunk.js.map": "/MyBlog/static/js/787.a361b86b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a686efad.css",
-    "static/js/main.a33d4277.js"
+    "static/js/main.60552a7a.js"
   ]
 }
