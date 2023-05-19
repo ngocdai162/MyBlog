@@ -11,11 +11,13 @@ import {
 	PlayCircleOutlined,
 } from "@ant-design/icons";
 import { MyMusicStyled } from "./styled";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 export default function MyMusic() {
 	const [currentSong, setCurrentSong] = useState<SongType | null>(null);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const audioElm = React.createRef<HTMLAudioElement>();
+	// const isMobileDevice = useMediaQuery("(max-width: 600px)");
 
 	useEffect(() => {
 		if (audioElm.current) {
@@ -23,6 +25,14 @@ export default function MyMusic() {
 			else audioElm.current?.pause();
 		}
 	}, [isPlaying]);
+
+	useEffect(() => {
+		window.scroll({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		});
+	}, [currentSong]);
 
 	const clickChangeSong = (songActive: SongType) => {
 		setCurrentSong(songActive);
@@ -97,7 +107,6 @@ export default function MyMusic() {
 									<StepForwardOutlined />
 								</button>
 							</div>
-
 							<audio
 								src={currentSong?.audioSrc}
 								controls

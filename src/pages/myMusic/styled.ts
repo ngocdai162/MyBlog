@@ -165,7 +165,14 @@ export const MyMusicStyled = styled.div`
 			}
 			&__controls {
 				width: 100%;
-				padding: 0px 30px;
+				audio::-webkit-media-controls-play-button,
+				audio::-webkit-media-controls-panel {
+					background-color: #fff;
+					color: #fff;
+				}
+				audio {
+					width: 100%;
+				}
 			}
 		}
 		.music {
@@ -174,13 +181,14 @@ export const MyMusicStyled = styled.div`
 				padding: 0px;
 				padding-top: 40px;
 				border: 0px;
+				height: fit-content;
 				&.exits {
 					width: 100%;
 					padding: 0px;
-					padding-top: 40px;
 				}
 				.list__block {
 					padding: 10px;
+					overflow: unset;
 				}
 			}
 		}

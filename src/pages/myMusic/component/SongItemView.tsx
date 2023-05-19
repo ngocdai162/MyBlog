@@ -57,14 +57,19 @@ const SongItemViewStyled = styled.div`
 		margin-right: ${size.largeSpace};
 	}
 	@media only screen and (max-width: 600px) {
-		height: 90px;
+		height: 70px;
 		.song__content {
+			overflow: hidden;
+			&__index {
+				font-size: 14px;
+			}
 			&__name {
 				margin-left: 10px;
-				width: 240px;
+				width: 185px;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
+				font-size: 14px;
 			}
 		}
 	}
