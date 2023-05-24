@@ -62,3 +62,18 @@ export const imgData = [
 		src: img_12,
 	},
 ];
+
+export const slideImages = [
+	{
+		url: imgData[0].src,
+		caption: "Slide 1",
+	},
+	{
+		url: imgData[1].src,
+		caption: "Slide 2",
+	},
+	{
+		url: imgData[2].src,
+		caption: "Slide 3",
+	},
+];

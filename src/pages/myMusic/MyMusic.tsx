@@ -17,7 +17,7 @@ export default function MyMusic() {
 	const [currentSong, setCurrentSong] = useState<SongType | null>(null);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const audioElm = React.createRef<HTMLAudioElement>();
-	// const isMobileDevice = useMediaQuery("(max-width: 600px)");
+	const isMobileDevice = useMediaQuery("(max-width: 600px)");
 
 	useEffect(() => {
 		if (audioElm.current) {
@@ -27,11 +27,13 @@ export default function MyMusic() {
 	}, [isPlaying]);
 
 	useEffect(() => {
-		window.scroll({
-			top: 0,
-			left: 0,
-			behavior: "smooth",
-		});
+		if (isMobileDevice) {
+			window.scroll({
+				top: 0,
+				left: 0,
+				behavior: "smooth",
+			});
+		}
 	}, [currentSong]);
 
 	const clickChangeSong = (songActive: SongType) => {

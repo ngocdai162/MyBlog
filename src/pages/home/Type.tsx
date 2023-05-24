@@ -8,7 +8,8 @@ export interface PostDataType {
 }
 
 export interface AboutMeItemType {
-	title: string;
+	title?: string;
 	content: string;
 	className: string;
+	imgSrc?: string;
 }

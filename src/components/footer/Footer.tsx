@@ -11,6 +11,7 @@ import SoundCloudICon from "../../assets/icons/SoundCloudICon";
 import { CONTACT_URL } from "../../utils/constants/path";
 import { color } from "../../utils/constants/style";
 import { useScrollToTop } from "../../hooks/useScrollToTop";
+import imgFooter from "../../assets/img/backgroundFooter.jpg";
 
 export default function Footer() {
 	const { isVisible, scrollToTop } = useScrollToTop(400);
@@ -25,6 +26,8 @@ export default function Footer() {
 					/>
 				))}
 			</div>
+			<p>2023 @ Design by Coca</p>
+
 			{isVisible && (
 				<button onClick={scrollToTop} className='scroll__to__top'>
 					<UpOutlined />
@@ -58,6 +61,7 @@ const FooterStyled = styled.div`
 	flex-direction: column;
 	height: 220px;
 	border-top: 3px solid ${color.brightColor};
+
 	p {
 		text-align: center;
 	}
@@ -65,6 +69,7 @@ const FooterStyled = styled.div`
 		display: flex;
 		justify-content: center;
 		padding-top: 20px;
+		margin-bottom: 40px;
 		svg {
 			font-size: 24px;
 			margin: 0px 20px;

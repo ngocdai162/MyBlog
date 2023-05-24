@@ -43,11 +43,15 @@ export default function MusicPlayer() {
 
 const MusicPlayerStyled = styled.div`
 	position: relative;
-	height: 240px;
 	width: 100%;
+	height: 120px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: height 2s;
+	&.down {
+		height: 240px;
+	}
 
 	#content {
 		position: absolute;
@@ -94,13 +98,9 @@ const MusicPlayerStyled = styled.div`
 	}
 
 	@media only screen and (max-width: 600px) {
-		height: 120px;
-		transition: height 2s;
-		&.down {
-			height: 240px;
-		}
 		button {
 			font-size: 18px;
 		}
 	}
+	
 `;
