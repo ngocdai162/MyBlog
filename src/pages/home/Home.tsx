@@ -2,14 +2,12 @@
 
 import React from "react";
 import styled from "styled-components";
-import { AboutMeRender } from "./Data";
 import { size } from "../../utils/constants/style";
 import MyImage from "../../assets/img/about_me.jpg";
 import { AboutMeItemType } from "./Type";
 import MusicPlayer from "./musicPlayer/MusicPlayer";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import img1 from "../../assets/img/img_1.png";
-import img2 from "../../assets/img/img_2.png";
 import codeImg from "../../assets/img/code.avif"
 
 export default function Home() {
@@ -212,8 +210,10 @@ const MyHomeStyled = styled.div`
 					}
 				}
 				&__detail {
-					width: 100%;
+					width: 90%;
+					font-size: 16px;
 					margin-top: 0px;
+					font-size: ${size.titleSize}
 				}
 				&__img {
 					height:320px;
