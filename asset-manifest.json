@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/MyBlog/static/css/main.a686efad.css",
-    "main.js": "/MyBlog/static/js/main.3f617980.js",
+    "main.js": "/MyBlog/static/js/main.87f8928e.js",
     "static/js/787.a361b86b.chunk.js": "/MyBlog/static/js/787.a361b86b.chunk.js",
+    "static/media/video_2.mp4": "/MyBlog/static/media/video_2.f8146790a5dfe8defa49.mp4",
+    "static/media/video_1.mp4": "/MyBlog/static/media/video_1.df9501ba18cee5677cb6.mp4",
     "static/media/backgroundAudio.mp3": "/MyBlog/static/media/backgroundAudio.b0a06b10a35eb04f844c.mp3",
     "static/media/Ghe Tham - Den_ Kimmese_ Linh Cao_ JGKID.mp3": "/MyBlog/static/media/Ghe Tham - Den_ Kimmese_ Linh Cao_ JGKID.542de69d3d3af4c0bd81.mp3",
     "static/media/Em La Mua - Vu.mp3": "/MyBlog/static/media/Em La Mua - Vu.a7ae623900b064b4993f.mp3",
@@ -22,10 +24,12 @@
     "static/media/img_10.jpg": "/MyBlog/static/media/img_10.82e8793663e40483f96f.jpg",
     "static/media/img_11.png": "/MyBlog/static/media/img_11.7d6af6ff686e415a4990.png",
     "static/media/DuChiLaMongMo.jpg": "/MyBlog/static/media/DuChiLaMongMo.b29327adc5eabae6d8e7.jpg",
+    "static/media/img_1.png": "/MyBlog/static/media/img_1.80b00e703e933babb972.png",
     "static/media/img_2.jpg": "/MyBlog/static/media/img_2.83210457448389beb213.jpg",
     "static/media/img_3.jpg": "/MyBlog/static/media/img_3.4f53baf60f4bd1611487.jpg",
+    "static/media/about_me.jpg": "/MyBlog/static/media/about_me.f09704f426aa7c5ebf73.jpg",
     "static/media/GacLaiAuLo.webp": "/MyBlog/static/media/GacLaiAuLo.4e4eb1a0e56cfa2e3fd5.webp",
-    "static/media/about_me.jpg": "/MyBlog/static/media/about_me.3a9db812799c47b19e1f.jpg",
+    "static/media/code.avif": "/MyBlog/static/media/code.875158daf3bf3b4aefb9.avif",
     "static/media/BietDau.jpg": "/MyBlog/static/media/BietDau.732bffd8c23dec0fb561.jpg",
     "static/media/DuaNhauDiTron.jpg": "/MyBlog/static/media/DuaNhauDiTron.e5fe8002563a1e7c5be8.jpg",
     "static/media/BenhCuaAnh.jpg": "/MyBlog/static/media/BenhCuaAnh.831d5f6411bb68e2c12c.jpg",
@@ -44,11 +48,11 @@
     "static/media/lg.woff2?io9a6k": "/MyBlog/static/media/lg.64b800aa30714fd916dc.woff2",
     "index.html": "/MyBlog/index.html",
     "main.a686efad.css.map": "/MyBlog/static/css/main.a686efad.css.map",
-    "main.3f617980.js.map": "/MyBlog/static/js/main.3f617980.js.map",
+    "main.87f8928e.js.map": "/MyBlog/static/js/main.87f8928e.js.map",
     "787.a361b86b.chunk.js.map": "/MyBlog/static/js/787.a361b86b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a686efad.css",
-    "static/js/main.3f617980.js"
+    "static/js/main.87f8928e.js"
   ]
 }
